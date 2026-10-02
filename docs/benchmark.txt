@@ -1,0 +1,28 @@
+cell = missions with all 15 picks in tolerance / collisions / median position error (mm)
+
+E1  worn (unreadable) codes, %
+  localiser                                0               25               50               75
+  odometry only              0/40 c40   84.3  0/40 c40  105.5  0/40 c40   69.7  0/40 c39  111.9
+  reset on code             40/40 c0     4.1 24/40 c0     4.7  7/40 c1     6.2  0/40 c20   12.8
+  EKF                       40/40 c0     1.5 27/40 c0     2.2  9/40 c2     3.4  0/40 c11    9.7
+  EKF + gate                38/40 c1     1.5 19/40 c2     2.2  5/40 c8     3.6  0/40 c13   10.0
+  EKF + gate + recovery     40/40 c0     1.5 26/40 c0     2.2  7/40 c2     3.4  0/40 c10    9.8
+  EKF + gate + bias state   39/40 c0     1.5 25/40 c0     2.1  5/40 c2     3.3  0/40 c27   14.7
+
+E2  misread rate, %
+  localiser                                0              0.5                2                5
+  odometry only              0/40 c40   84.3  0/40 c40   85.6  0/40 c40  101.4  0/40 c40   74.5
+  reset on code             40/40 c0     4.1  6/40 c11    4.1  0/40 c31    4.2  0/40 c40    4.4
+  EKF                       40/40 c0     1.5 13/40 c0     2.0  0/40 c1     4.1  0/40 c20   14.6
+  EKF + gate                38/40 c1     1.5 39/40 c1     1.6 40/40 c0     1.5 40/40 c0     1.6
+  EKF + gate + recovery     40/40 c0     1.5 40/40 c0     1.6 40/40 c0     1.5 40/40 c0     1.6
+  EKF + gate + bias state   39/40 c0     1.5 39/40 c0     1.5 39/40 c0     1.6 40/40 c0     1.5
+
+E3  wheel-radius error, %
+  localiser                                0             0.25              0.5                1                2
+  odometry only              0/40 c40   84.3  0/40 c40   71.0  0/40 c40   94.7  0/40 c40  147.9  0/40 c40  190.0
+  reset on code             40/40 c0     4.1 39/40 c0     4.1 15/40 c0     4.2  0/40 c0     4.3  0/40 c0     4.6
+  EKF                       40/40 c0     1.5  1/40 c0     3.0  0/40 c0     6.0  0/40 c3    11.5  0/40 c40   27.2
+  EKF + gate                38/40 c1     1.5  0/40 c40    5.4  0/40 c40   32.9  0/40 c40  101.4  0/40 c40  193.9
+  EKF + gate + recovery     40/40 c0     1.5  0/40 c0     2.9  0/40 c0     3.0  0/40 c2     3.3  0/40 c27    4.8
+  EKF + gate + bias state   39/40 c0     1.5 40/40 c0     1.6 40/40 c0     1.8 40/40 c0     2.2 40/40 c0     2.9
